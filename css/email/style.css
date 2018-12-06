@@ -1,0 +1,165 @@
+
+.compose-email-wrapper {
+    margin-bottom: 20px;
+}
+
+.compose-email-button {
+    background-color: lightgreen;
+    
+}
+.compose-email-button:hover {
+    cursor: pointer;
+}
+
+
+
+.email-app-wrapper {
+    /* border: 1px solid rgb(173, 173, 173); */
+    box-shadow: 0px 1px 4px rgb(75, 73, 73);
+    /* width: 1045px;
+    height: 100vh;   */
+    background-color: white;
+      
+}
+
+.search-box {
+   background-color:  rgb(216, 215, 215);
+   padding: 10px;
+}
+
+.search-input-box {
+    padding: 10px;
+    width:50%;
+}
+
+
+.btn-compose {
+    padding: 11px 25px;
+    background-color: lightseagreen;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn-compose:hover {
+    cursor: pointer;
+    color:white;
+    background-color: rgb(40, 128, 40);
+    transition: 0.3s;
+}
+
+.filter-by {
+    padding: 10px;
+}
+
+.email-sort {
+    margin: 0 20px;
+}
+
+.email-status {
+    padding: 10px;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(224, 221, 221);
+    margin:10px 0;
+
+}
+
+.email-list {
+    padding: 0 15px;
+    border-right: 1px solid rgb(224, 221, 221);
+    width: 40vw;
+}
+
+.email-details {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.fa-trash-alt {
+    font-size: 28px;
+    color: grey;
+}
+
+.fa-trash-alt:hover {
+    cursor: pointer;
+    color: lightcoral;
+}
+
+.email-details, .email-preview p {
+    font-size: 14px;    
+}
+
+.email-preview p {
+    color: rgb(78, 78, 78);  
+}
+
+.new-message-label {
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 15px;
+}
+
+.compose-input-box {
+    width: 100%;
+    border:none;
+    padding: 15px;
+}
+
+
+.back-btn:hover {
+cursor: pointer;
+transform: scale(0.95)
+}
+
+/* helpers */
+
+.inline {
+    display: inline;
+}
+
+.unread {
+    font-weight: bold;
+}
+
+.read {
+    font-weight: normal;
+}
+
+.selected {
+    background-color: rgb(240, 238, 238);
+}
+
+.container {
+    box-shadow: 0px 1px 4px rgb(75, 73, 73);
+    background-color: white;
+    width: 1045px;
+    margin-bottom: 30px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.no-outline {
+    outline:none;
+}
+
+/* flex */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/********** TABLET / MOBILE **********/
+
+@media (max-width: 750px) {
+    .main-menu {
+        flex-direction: column;    
+    }
+    .email-list {
+        width: 100%;
+    }
+}

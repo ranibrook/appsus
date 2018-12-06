@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+div, h1, h2, h3, p, li {
+    margin: 0;
+    font-family: Noto-Sans-regular;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+a, .btn {
+    cursor: pointer;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    border: 0px;
+    background-color: #ffffff8c;
+    font-weight: bold;
+    color: #1A00C4;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #80808047;
+    
+}
+
+/* Font Face */
+
+@font-face {
+    font-family: Lato-regular;
+    src: url('../fonts/Lato/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Shrikhand-regular;
+    src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+    font-family: Kaushan-regular;
+    src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: Monda-regular;
+    src: url('../fonts/Monda/Monda-Regular.ttf');
+}
+
+@font-face {
+    font-family: Eagle-Lake-regular;
+    src: url('../fonts/Eagle_Lake/EagleLake-Regular.ttf');
+}
+
+@font-face {
+    font-family: Prompt-regular;
+    src: url('../fonts/Prompt/Prompt-Medium.ttf');
+}
+
+@font-face {
+    font-family: Noto-Sans-regular;
+    src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+
+/* font-family: 'Shrikhand', cursive; */
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Monda', sans-serif;
+font-family: 'Eagle Lake', cursive;
+font-family: 'Noto Sans', sans-serif; */
+
+/* font-family: 'Kaushan Script', cursive; */
+
+
+/* ******HELPERS********** */
+
+.text-align {
+    text-align: center;
+}
+
+
+/* lists */
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.direction {
+    flex-direction: column;
+}
+
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/********GENERAL********/
+h2 {
+    font-size: 1.2rem;
+}
+
+.header {
+    height: 130px;  
+    border-bottom: 1px solid #3BC242; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.logo {
+    width: 150px;
+    padding: 1rem;
+    margin: 0 20px;
+    /*colors*/
+    /* blue: #1A00C4;
+    orange: #F66920;
+    green: #3BC242; */
+    align-self: flex-start;
+}
+
+.nav-bar {
+    font-size: 1rem;
+    padding: 20px 50px;
+    color:  #3BC242;
+    text-align: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.nav-bar a {
+    padding: 0 10px;
+}
+
+.nav-bar .router-link{
+    text-decoration: 1px solid #3BC242;
+}
+
+a:visited {
+    color: #1A00C4;
+}
+
+.router-link-active {
+    color: #3BC242;
+    font-weight: bold;
+}
+
+/*******HOME************/
+
+.email-keeper-icons {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.email-icon, .keeper-icon {
+    margin: 40px 60px;
+    background-color: white;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px rgb(75, 73, 73);
+}
+
+.email-icon h2, .keeper-icon h2 {
+    margin: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    color: #3BC242;
+}
+
+.email-icon img, .keeper-icon img{
+    width: 200px;
+}
+
+
+
+@media screen and (min-width: 678px) {
+    .email-keeper-icons {
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        font-family: 'Shrikhand', cursive;
+        min-width: 300px;
+        font-size: 1.5rem;
+        flex-direction: row;
+    }
+
+}
